@@ -34,8 +34,8 @@ class _Skeleton:
         # anything that doesn't exist. If too much of the spine doesn't exist
         # draw a box using shoulders and hips.
         "spine": [
-            "head", "neck", "shoulder centre", "thorax", "mid torso", "belly",
-            "pelvis"
+            "head centre", "head", "neck", "shoulder centre", "thorax",
+            "mid torso", "belly", "pelvis"
         ],
         # For a simple skeleton the head usually doesn't need much detail, only
         # the centre line, which is given by the nose or head top and should be
@@ -58,6 +58,7 @@ class _Skeleton:
             "thumb": "hand"
         },
         "foot": {
+            "big toe": "ankle",
             "small toe": "foot",
             "heel": "ankle"
         },
