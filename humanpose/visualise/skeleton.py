@@ -17,6 +17,7 @@ class _Skeleton:
         FACE = 4
         HANDS = 8
         FEET = 16
+        FULL = 31
         OBJECTS = 32
 
     # This is for easy looping over symmetric connections.
@@ -285,7 +286,7 @@ class _Skeleton:
         # Work out connections of hips to spine and each other
         self._bones[_Skeleton.Sections.MAIN].extend(
             _Skeleton._limb2spine(landmarks, "hip", ("pelvis", ),
-                                  _Skeleton._body_parts["spine"][-2:2:-1]))
+                                  _Skeleton._body_parts["spine"][-2:1:-1]))
 
         self._bones[_Skeleton.Sections.MAIN].extend(
             _Skeleton._connect_sequence(landmarks,
